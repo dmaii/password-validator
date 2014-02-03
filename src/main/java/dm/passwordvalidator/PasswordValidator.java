@@ -14,6 +14,11 @@ public class PasswordValidator {
 	
 	private List<ValidationRule> rules;
 	
+	/**
+	 * Runs all your validation rules and returns true if it's valid, false otherwise
+	 * @param inPassword
+	 * @return boolean true if valid, false if otherwise
+	 */
 	public boolean validate(String inPassword) {
 		for (ValidationRule rule : this.getRules()) {
 			if (!rule.validate(inPassword)) {
@@ -23,6 +28,12 @@ public class PasswordValidator {
 		return true;
 	}
 	
+	/**
+	 * Runs all your validation rules and returns a {@link ValidationResult} with messages if
+	 * the password was invalid
+	 * @param inPassword
+	 * @return {@link ValidationResult} The validation result
+	 */
 	public ValidationResult validateWithMessages(String inPassword) {
 		ValidationResult returnValue = new ValidationResult();
 		List<String> messages = new ArrayList<String>();

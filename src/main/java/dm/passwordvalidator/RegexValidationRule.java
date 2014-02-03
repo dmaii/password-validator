@@ -21,7 +21,7 @@ public class RegexValidationRule implements ValidationRule {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.test.password_validator.ValidationRule#validate(java.lang.String)
+	 * @see dm.passwordvalidator.ValidationRule#validate(java.lang.String)
 	 */
 	public boolean validate(String inPassword) {
 		if (Pattern.matches(regex, inPassword)) {
@@ -31,7 +31,7 @@ public class RegexValidationRule implements ValidationRule {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.test.password_validator.ValidationRule#getMessage()
+	 * @see dm.passwordvalidator.ValidationRule#getMessage()
 	 */
 	public String getMessage() {
 		return message;
