@@ -22,11 +22,11 @@ To setup, open up a terminal and type:
 4. mvn install
 5. Include the following in your application's pom.xml and then build:
 
-	<dependency>
-        	<groupId>dm.passwordvalidator</groupId>
-		<artifactId>password-validator</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-      	</dependency>
+		<dependency>
+        		<groupId>dm.passwordvalidator</groupId>
+			<artifactId>password-validator</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+      		</dependency>
 
 ## Using the library
 
