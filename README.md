@@ -30,7 +30,7 @@ To setup, open up a terminal and type:
 
 ## Using the library
 
-The simplest way to use the validator is to just run it with the default validations, which validathe following:
+The simplest way to use the validator is to just run it with the default validations, which validates the following:
 
 	- Must consist of a mixture of lowercase letters and numerical digits only, with at least one of each.
 	- Must be between 5 and 12 characters in length.
