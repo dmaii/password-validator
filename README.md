@@ -22,23 +22,23 @@ To setup, open up a terminal and type:
 4. mvn install
 5. Include the following in your application's pom.xml and then build:
 
-			<dependency>
+	<dependency>
         	<groupId>dm.passwordvalidator</groupId>
-					<artifactId>password-validator</artifactId>
-					<version>0.0.1-SNAPSHOT</version>
-      </dependency>
+		<artifactId>password-validator</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+      	</dependency>
 
 ## Using the library
 
 The simplest way to use the validator is to just run it with the default validations, which validathe following:
 
-				- Must consist of a mixture of lowercase letters and numerical digits only, with at least one of each.
-				- Must be between 5 and 12 characters in length.
-				- Must not contain any sequence of characters immediately followed by the same sequence.
+	- Must consist of a mixture of lowercase letters and numerical digits only, with at least one of each.
+	- Must be between 5 and 12 characters in length.
+	- Must not contain any sequence of characters immediately followed by the same sequence.
 
 All you have to do is define it as a bean somewhere inside your context:
 
-		<bean id="passwordValidator" class="dm.passwordvalidator.PasswordValidator"/>
+	<bean id="passwordValidator" class="dm.passwordvalidator.PasswordValidator"/>
 
 You can validate your password string with the bean's validate method (if all you need is a boolean back), or validateWithMessages if you need the messages associated with the validations.
 
