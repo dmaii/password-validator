@@ -63,7 +63,7 @@ public class PasswordValidator {
 		returnValue.add(new RegexValidationRule("[a-z0-9]+", DefaultValidatorMessages.LOWERCASE_AND_NUMBERS));
 		returnValue.add(new RegexValidationRule(".*[a-z].*", DefaultValidatorMessages.LOWERCASE_AND_NUMBERS));
 		returnValue.add(new RegexValidationRule(".*[0-9].*", DefaultValidatorMessages.LOWERCASE_AND_NUMBERS));
-		returnValue.add(new RegexValidationRule(".{5,15}", DefaultValidatorMessages.FIVE_AND_TWELVE));
+		returnValue.add(new RegexValidationRule(".{5,12}", DefaultValidatorMessages.FIVE_AND_TWELVE));
 		return returnValue;
 	}
 
